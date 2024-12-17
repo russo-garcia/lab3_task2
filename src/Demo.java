@@ -8,9 +8,9 @@ public class Demo {
 
         // Abstract Factory Demo
         System.out.println("Abstract Factory Demo:");
-        System.out.println("Choose Exam Controller type:");
-        System.out.println("1 - Standard Exam Controller");
-        System.out.println("2 - Advanced Exam Controller");
+        System.out.println("Choose Controller type:");
+        System.out.println("1 - Standard Controller");
+        System.out.println("2 - Advanced Controller");
 
         AbstractFactory factory;
         String choice = reader.readLine();
@@ -19,28 +19,63 @@ public class Demo {
         switch (choice) {
             case "1":
                 factory = new StandardControlFactory();
-                System.out.println("You selected Standard Exam Controller.");
+                System.out.println("You selected Standard Controller.");
                 break;
             case "2":
                 factory = new AdvancedControlFactory();
-                System.out.println("You selected Advanced Exam Controller.");
+                System.out.println("You selected Advanced Controller.");
                 break;
             default:
-                System.out.println("Invalid choice. Defaulting to Standard Exam Controller.");
+                System.out.println("Invalid choice. Defaulting to Standard Controller.");
                 factory = new StandardControlFactory();
                 break;
         }
 
-        LabControl labControl = factory.createLabControl();
+        // Create ExamControl and LabControl objects
         ExamControl examControl = factory.createExamControl();
+        LabControl labControl = factory.createLabControl();
 
-
-        // Setting grades
+        // Set grade logic
+        System.out.println("\nSetting grades:");
         examControl.setGrade();
 
-        // Managing lab groups
-        labControl.manageLabGroups();
-        
+        // Lab group management options
+        while (true) {
+            System.out.println("\nChoose an action for Lab Groups:");
+            System.out.println("1 - Open Lab Groups");
+            System.out.println("2 - Close Lab Groups");
+            if (labControl instanceof AdvancedLabControl) {
+                System.out.println("3 - Change Lab Group Size");
+            }
+            System.out.println("4 - Exit");
+
+            String action = reader.readLine();
+            switch (action) {
+                case "1":
+                    labControl.openLabGroups();
+                    break;
+                case "2":
+                    labControl.closeLabGroups();
+                    break;
+                case "3":
+                    if (labControl instanceof AdvancedLabControl) {
+                        System.out.println("Enter new group size:");
+                        int size = Integer.parseInt(reader.readLine());
+                        ((AdvancedLabControl) labControl).changeLabGroupSize(size);
+                    } else {
+                        System.out.println("This option is not available in Standard Controller.");
+                    }
+                    break;
+                case "4":
+                    System.out.println("Exiting...");
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+                    break;
+            }
+            if (action.equals("4")) break; // Exit the loop
+        }
+
         // Observer Pattern Demo
         System.out.println("\nNotifier Demo:");
         Notifier notifier = new Notifier();

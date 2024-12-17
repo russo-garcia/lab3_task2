@@ -1,6 +1,12 @@
 // Concrete Product: Standard LabControl
 class StandardLabControl implements LabControl {
-    public void manageLabGroups() {
-        System.out.println("Managing lab groups with standard control.");
+    @Override
+    public void openLabGroups() {
+        System.out.println("Opening lab groups with standard control.");
+    }
+
+    @Override
+    public void closeLabGroups() {
+        System.out.println("Closing lab groups with standard control.");
     }
 }
