@@ -4,27 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e067635-63c5-418f-98a8-8e555c3fa89b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab3_task2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedControlFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedExamControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdvancedLabControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ExamControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LabControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LecturerSubscriber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Notifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StandardControlFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StandardExamControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StandardLabControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StudentSubscriber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Subscriber.java" afterDir="false" />
+    <list default="true" id="7e067635-63c5-418f-98a8-8e555c3fa89b" name="Changes" comment="1st code for task2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AdvancedExamControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdvancedExamControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AdvancedLabControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdvancedLabControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StandardExamControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StandardExamControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StandardLabControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StandardLabControl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +29,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;russo-garcia&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/russo-garcia/lab3_task2.git&quot;,
+    &quot;accountId&quot;: &quot;7e125b48-b7ed-40f7-b54f-823a62c07e77&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2qCw0UU0WXoIr0QL6D4lMXIQgiz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -53,15 +52,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Demo.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/gugu_/Documents/GitHub/lab3_task2/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Demo.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/gugu_/Documents/GitHub/lab3_task2/src/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,6 +70,30 @@
       <option name="presentableId" value="Default" />
       <updated>1734179645094</updated>
     </task>
+    <task id="LOCAL-00001" summary="1st code for task2">
+      <option name="closed" value="true" />
+      <created>1734180902680</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734180902680</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1st code for task2" />
+    <option name="LAST_COMMIT_MESSAGE" value="1st code for task2" />
   </component>
 </project>

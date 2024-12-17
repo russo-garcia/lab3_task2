@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 // Concrete Product: Advanced ExamControl
+// This class is used for exams with normal 0 to 15 grades.
 class AdvancedExamControl implements ExamControl {
     public void setGrade() {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

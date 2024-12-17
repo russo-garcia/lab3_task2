@@ -6,6 +6,14 @@ public class Demo {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
+        // Observer Pattern Demo
+        Notifier notifier = new Notifier();
+        Subscriber student = new StudentSubscriber("Arian");
+        Subscriber lecturer = new LecturerSubscriber("Dr. Gustavo");
+
+        notifier.attach(student);
+        notifier.attach(lecturer);
+
         // Abstract Factory Demo
         System.out.println("Abstract Factory Demo:");
         System.out.println("Choose Controller type:");
@@ -35,7 +43,7 @@ public class Demo {
         ExamControl examControl = factory.createExamControl();
         LabControl labControl = factory.createLabControl();
 
-        // Set grade logic
+        // Setting the1 grade
         System.out.println("\nSetting grades:");
         examControl.setGrade();
 
@@ -75,17 +83,5 @@ public class Demo {
             }
             if (action.equals("4")) break; // Exit the loop
         }
-
-        // Observer Pattern Demo
-        System.out.println("\nNotifier Demo:");
-        Notifier notifier = new Notifier();
-        Subscriber student = new StudentSubscriber("Arian");
-        Subscriber lecturer = new LecturerSubscriber("Dr. Gustavo");
-
-        notifier.attach(student);
-        notifier.attach(lecturer);
-
-        System.out.println("Sending reminder...");
-        notifier.notifySubscribers("New lab assignment is available!");
     }
 }

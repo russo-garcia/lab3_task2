@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 // Concrete Product: Standard ExamControl
+// This class is used for exams with only Pass/Fail grades. E.g. LSL or German Course.
 class StandardExamControl implements ExamControl {
     public void setGrade() {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
